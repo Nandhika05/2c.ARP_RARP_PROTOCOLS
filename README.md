@@ -20,7 +20,7 @@ P
 Name:- Nandhika P
 
 Register No:- 212223040125
-
+```
 s=socket.socket()
 
 s.bind(('localhost',8000))
@@ -40,14 +40,14 @@ c.send(address[ip].encode())
 except KeyError:
 
 c.send("Not Found".encode())
-
+```
 ## OUPUT - ARP
 
 ![Screenshot 2024-10-08 094037](https://github.com/user-attachments/assets/21739129-55a2-4730-a103-ee9692b32ef5)
 
 
 ## PROGRAM - RARP
-
+```
 s = socket.socket()
 
 s.connect(('localhost',8000))
@@ -59,7 +59,7 @@ ip = input("Enter logical address: ")
 s.send(ip.encode())
 
 print("MAC Address",s.recv(1024).decode())
-
+```
 ## OUPUT -RARP
 
 ![Screenshot 2024-10-08 094055](https://github.com/user-attachments/assets/b6a4594e-9cd6-4863-809e-662b8ebd4b48)
